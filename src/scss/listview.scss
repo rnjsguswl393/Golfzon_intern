@@ -1,0 +1,81 @@
+.list_hd {
+    position: fixed;
+    // left: 0;
+    top: 0px;
+    z-index: 101;
+    width: 100%;
+    height: auto;
+    // overflow: hidden;
+    background-color: #fff;
+    // overflow-x: scroll;
+    .items {
+        text-align: center;
+        // padding: 10px;
+    }
+    .btn {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .form-group {
+        margin-bottom: 0;
+    }
+}
+.list_bd {
+    position: relative;
+    padding-top: 10px;
+    .list-group-item {
+        min-height: 70px;
+        padding: 0.85rem 1.25rem;
+    }
+    h5 {
+        color: #17a2b8;
+        font-weight: bold;
+    }
+    small {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 120px;
+        text-align: right;
+        .badge {
+            margin-left: 3px;
+        }
+    }
+    .thumb_list {
+        position: absolute;
+        left: 8px;
+        top: 10px;
+        width: 56px;
+        height: 56px;
+    }
+    .shop_info {
+        padding: 0 110px 0 52px;
+        h5,
+        p {
+            margin-bottom: 3px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
+            overflow: hidden;
+        }
+    }
+}
+.btn.active {
+    color: #fff;
+    background-color: #f00;
+    border-color: #f00;
+}
+.custom-control-label span {
+    position: relative;
+    top: 2px;
+}
+.badge_custom_1 {
+    background-color: rgb(235, 178, 178);
+}
+.badge_custom_2 {
+    background-color: rgb(178, 137, 255);
+}
+.drop-down .dropdown-menu {
+    max-height: 100px;
+    overflow: scroll;
+}

@@ -1,0 +1,67 @@
+#map {
+    width: 100%;
+    height: 670px;
+}
+.bottomInfo {
+    position: fixed;
+    left: 0;
+    bottom: 60px;
+    width: 100%;
+    height: 190px;
+    z-index: 101;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #fff;
+    bottom: -400px;
+    animation-name: hiddenBottomPop;
+    animation-duration: 1s;
+    &.show {
+        animation-name: showBottomPop;
+        animation-duration: 1s;
+        bottom: 60px;
+    }
+    
+    .btm_info_close {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        z-index: 101;
+        font-size: 20px;
+        // color: #fff;
+    }
+    .btm_info_content {
+        font-size: 14px;
+        color: #333;
+        line-height: 1.3;
+        margin-top: 10px;
+    }
+}
+
+@keyframes showBottomPop {
+    from {
+        bottom: -260px;
+    }
+    to {
+        bottom: 60px;
+    }
+}
+@keyframes hiddenBottomPop {
+    from {
+        bottom: 60px;
+    }
+    to {
+        bottom: -400px;
+    }
+}
+.card {
+    height: 150px;
+}
+.card-body {
+    padding: 0px 16px;
+}
+.card-img,
+.card-img-top {
+    padding: 5px;
+    height: 100px;
+    object-fit: cover;
+}
